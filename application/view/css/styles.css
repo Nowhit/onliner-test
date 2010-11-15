@@ -1,0 +1,435 @@
+html {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: arial;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #777777;
+}
+
+a {
+	color: #777777;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a img {
+	border: none;
+	opacity: 0.85;
+}
+
+a:hover img {
+	opacity: 1;
+}
+
+h5 {
+	margin: 0px 0px 10px;
+	padding: 0px 0px 3px 0px;
+	font-size: 10px;
+	font-weight: normal;
+	border-bottom: 1px dashed #dddddd;
+}
+
+input, select, textarea {
+	padding: 3px;
+	font-family: arial;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #777777;
+	border: 1px solid #dddddd;
+	-moz-border-radius: 3px;
+}
+
+input:hover, input:focus, select:hover, select:focus, textarea:hover, textarea:focus {
+	border: 1px solid #bbbbbb;
+}
+
+
+/* Page structure */
+.page {
+	width: 900px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.page-block {
+	width: 880px;
+	margin: 20px 0px 0px 0px;
+	padding: 10px;
+	overflow: hidden;
+	background: #f9f9f9;
+	-moz-border-radius: 10px;
+}
+
+.page-block .block-title {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+
+
+/* Header */
+.block-header {
+	margin-top: 0px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	background: none;
+}
+
+.block-logotype {
+	height: 100px;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.block-breadcrumb {
+	text-align: left;
+}
+
+.block-authorization {
+	text-align: right;
+}
+
+
+/* Menu */
+.block-menu {
+	width: 900px;
+	padding: 0px;
+	background: #ffffff;
+}
+
+.block-menu .block-items {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.block-menu .block-item {
+	float: left;
+	margin: 0px 20px 0px 0px;
+	padding: 9px;
+	cursor: default;
+	border-left: 1px dashed #ffffff;
+}
+
+.block-menu .block-subitems {
+	display: none;
+	position: absolute;
+	margin: 0px 0px 0px -10px;
+	padding: 10px 0px 0px 0px;
+	list-style: none; 
+	border-left: 1px dashed #dddddd;
+	border-bottom: 1px dashed #dddddd;
+}
+
+.block-menu .block-subitem {
+	padding: 5px 10px;
+	background: #ffffff;
+	border-right: 1px dashed #dddddd;
+}
+
+.block-menu .block-item:hover {
+	color: #000000;
+	//border-left: 1px dashed #dddddd;
+}
+
+.block-menu .block-subitem:hover {
+	background: #f9f9f9;
+}
+
+.block-menu .block-item:hover .block-subitems {
+	display: block;
+}
+
+
+/* Home page journal */
+.block-files {
+}
+
+.block-files .block-items {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.block-files .block-item {
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
+	background: #ffffff;
+	text-align: center;
+	-moz-border-radius: 10px;
+}
+
+.block-files .block-item-header {
+	margin: 10px 0px 0px 0px;
+	padding: 10px 10px 0px 10px;
+	text-align: center;
+}
+
+.block-files .block-control {
+	float: none;
+	clear: both;
+	display: block;
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	text-align: right;
+	font-size: 8px;
+}
+
+.block-files table {
+	width: 100%;
+}
+
+.block-files .file-origin-name {
+	text-align: left;
+}
+
+.block-files .file-add-datetime {
+	text-align: left;
+}
+
+.block-files .file-download-url {
+	text-align: right;
+}
+
+.block-files .file-delete-url {
+	text-align: right;
+}
+
+.block-users {
+	
+}
+
+.block-users .block-items {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.block-users .block-item {
+	float: left;
+	width: 97px;
+	margin: 10px 0px 0px 10px;
+	padding: 10px;
+	background: #ffffff;
+	text-align: center;
+	-moz-border-radius: 10px;
+}
+
+.block-users .block-item.first-column {
+	margin-left: 0px;
+}
+
+.block-users .block-item img {
+	margin-top: 5px;
+}
+
+.block-users .block-control {
+	float: none;
+	clear: both;
+	display: block;
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	text-align: right;
+	font-size: 8px;
+}
+
+.block-comments {
+
+}
+
+.block-comments .block-items {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.block-comments .block-item {
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
+	background: #ffffff;
+	text-align: left;
+	-moz-border-radius: 10px;
+}
+
+.block-comments .block-item.level-2 {
+	margin-left: 40px;
+}
+
+.block-comments .empty-item {
+	margin: 10px 0px 0px 0px;
+	text-align: left;
+}
+
+.block-add-comment {
+	padding-top: 0px;
+	text-align: center;
+	background: transparent;
+}
+
+.block-add-comment textarea {
+	width: 250px;
+	height: 100px;
+}
+
+.block-footer {
+	padding-top: 0px;
+	margin-bottom: 20px;
+	background: none;
+}
+
+.block-links {
+	padding-right: 50px;
+}
+
+.block-links ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.block-links ul li {
+	margin: 3px 0px;
+	font-size: 8px;
+}
+
+
+/* Form */
+.form-table {
+	margin: 0px auto;
+}
+
+.form-table th {
+	padding: 0px 0px 10px 0px;
+	font-size: 13px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.form-table td {
+	vertical-align: top;
+	line-height: 18px;
+}
+
+.form-table td.label {
+	width: 150px;
+}
+
+.form-table td.image {
+	text-align: center;
+}
+
+.form-table td.image img {
+	margin-bottom: 10px;
+}
+
+.form-table td.value {
+	
+}
+
+.form-table td.value input.text {
+	width: 250px;
+}
+
+.form-table td.value textarea {
+	width: 250px;
+	height: 150px;
+}
+
+.form-table td.control {
+	padding: 10px 0px 0px 0px;
+	text-align: right;
+}
+
+.form-table .validation {
+	display: block;
+	color: #cc9999;
+	font-size: 8px;
+	font-style: italic;
+}
+
+/* User profile */
+.block-user-profile {
+	width: 900px;
+	padding: 0px;
+	background: none;
+}
+
+.block-user-profile-avatar {
+	width: 440px;
+	height: 440px;
+	background: #ffffff;
+	text-align: center;
+	line-height: 0px;
+	font-size: 0px;
+}
+
+.block-user-profile-avatar div {
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	overflow: hidden;
+	background: #f9f9f9;
+	-moz-border-radius: 10px;
+}
+
+.block-user-profile-data {
+	padding: 20px 0px 0px 20px;
+	vertical-align: top;
+}
+
+.block-user-profile-data th {
+	padding: 0px 0px 10px 0px;
+	font-size: 13px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.block-user-profile-data td {
+	padding-bottom: 3px;
+}
+
+.block-user-profile-data td.label {
+	padding: 0px 20px 0px 0px;
+}
+
+/* User journal */
+.block-user-journal .post-photo img {
+	max-width: 880px;
+	max-height: 880px;
+}
+
+/* Post */
+.post-header {
+	font-size: 13px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.post-header i {
+	display: block;
+	font-size: 10px;
+}
+
+.post-content {
+	text-align: justify;
+}
+
+.post-photo {
+	text-align: left;
+}

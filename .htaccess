@@ -1,0 +1,31 @@
+# Set directory rules
+DirectoryIndex index.php
+
+# Set rewrite rules 
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !\.(png|gif|ico|swf|jpe?g|js|css)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L,QSA,NE]
+
+# Set charset rules
+AddDefaultCharset utf-8
+
+# Set framework rules
+php_value auto_prepend_file 'framework/essence/autoload.php'
+
+# Set timezone rules
+php_value date.timezone 'Europe/Minsk'
+
+# Set restriction rules
+php_value max_execution_time 0
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+php_value memory_limit 128M
+
+# Set behavior rules
+php_flag register_globals off
+php_flag magic_quotes_gpc off
+php_flag magic_quotes_runtime off
+php_flag short_open_tag on
